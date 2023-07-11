@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist",
+      "moduleResolution": "nodenext",
+      "checkJs": true,
+      "module": "ES2022",
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+      "@/*": ["./src/*"]
+      },
+      "plugins": [
+        {
+          "name": "typescript-styled-plugin",
+          "tags": [
+            "styled",
+            "css",
+            "sty"
+          ]
+        }
+      ] 
+    },
+    "exclude": [
+        "./vite.config.js"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "users": [
+      {
+        "id": "auth0|63f9729a311f7ffa822dcd6a",
+        "email": "test@gmail.com",
+        "isRegistered": false,
+        "profileType": "Customer"
+      },
+      {
+        "id": "auth0|64058e66d9f505ef159bd4b9",
+        "email": "test2@gmail.com",
+        "isRegistered": false,
+        "profileType": "Vendor",
+        "businessName": null
+      },
+      {
+        "profileType": "Customer",
+        "isRegistered": false,
+        "id": "auth0|642b58c2c9c6a1d7ba813460"
+      },
+      {
+        "profileType": "Customer",
+        "isRegistered": false,
+        "id": "auth0|6451c74e5dacc356c005d008"
+      },
+      {
+        "profileType": "Customer",
+        "isRegistered": false,
+        "id": "auth0|645480ba3bed7617bbc4f86b"
+      },
+      {
+        "profileType": "Vendor",
+        "businessName": "a",
+        "description": "c",
+        "category": "b",
+        "id": "auth0|645863d252dd694167360299"
+      },
+      {
+        "isRegistered": false,
+        "profileType": "Customer",
+        "customerName": "",
+        "id": "auth0|6459bf5583015a9687da7f97"
+      },
+      {
+        "isRegistered": false,
+        "profileType": "Customer",
+        "customerName": "bri",
+        "id": "auth0|6459cb100c1aee4f2c82cbdd"
+      }
+    ]
+  }
