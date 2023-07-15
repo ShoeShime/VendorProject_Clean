@@ -6,8 +6,8 @@ import { Register } from './features/registerPage/components/Register'
 import { CallbackPage } from './features/misc/CallbackPage'
 import { Route, Routes } from 'react-router-dom'
 import { ProtectedRoute } from './lib/ProtectedRoute'
-import ChatPage from './features/chatPage/ChatDisplay/components/ChatPage'
-import ChatRoom from './features/chatPage/ChatRoom/components/ChatRoom'
+import ChatPage from './features/ChatPage/ChatDisplay/components/ChatPage'
+import ChatRoom from './features/ChatPage/ChatRoom/components/ChatRoom'
 import MapPage from './features/mapPage/MapPage';
 import Profile from './features/profilePage/Profile';
 import CustomerDashboard from './features/customerdisplay/components/CustomerDashboard'
@@ -24,6 +24,7 @@ export const App = () => {
   
   const profileLink = "https://www.kindpng.com/picc/m/17-179199_chibi-christmas-anime-pinkhair-kawaii-anime-chibi-png.png";
   //const storeLogo = "https://www.kindpng.com/picc/m/27-273685_giant-singapore-food-stores-supermarket-giant-landover-giant.png";
+  
   const storeLogo = logoPicture;
 
   // Basic information for both vendor & customer

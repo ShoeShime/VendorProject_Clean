@@ -4,8 +4,6 @@ import Conversation from "./Conversation";
 import CatPicture from "../misc/ThumbsUp.jpg";
 import GoofyCat from "../misc/GoofyCat.jpeg";
 
-import Link from "react-router-dom";
-
 const MessageWrapper = styled.div`
 	background-color: #FFFFFF;
 
