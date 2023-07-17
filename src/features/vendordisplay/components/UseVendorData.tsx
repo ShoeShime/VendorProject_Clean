@@ -84,7 +84,17 @@ export const useVendorData = () =>{
   }
 
 	return{
-		
-
+		menuFile,
+		storeName,
+		des,
+		cat,
+		logo,
+		setMenu,
+		setStore,
+		setDescription,
+		setCategories,
+		setStoreLogo,
 	};
 };
+
+export default useVendorData;

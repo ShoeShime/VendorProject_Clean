@@ -22,6 +22,8 @@ export const App = () => {
   
   console.log('app page loaded');
 
+
+
 /*connects a 'string' in my address bar to a component*/
   return (
     <Routes>
@@ -31,40 +33,17 @@ export const App = () => {
       <Route path='/chat' element={<ChatPage/>}/>
       <Route path='/chatRoom' element={<ChatRoom/>}/>
       <Route path='/map' element={<MapPage/>}/>
-      <Route path='/profile' element={<Profile 
-          isVendor = {isVendor} 
-          userID = {userID}
-          email = {email}
-          profilePic = {profilePic} 
-          fName = {fName}
-          lName = {lName}
-          phone = {phone}
-          pass = {password}
-          setProfilePicture = {setProfilePicture} 
-          setFirstName = {setFirstName}
-          setLastName = {setLastName}
-          setPhoneNumber = {setPhoneNumber}
-          setPass = {setPass}
-          storeName = {storeName} 
-          logo = {logo}
-          description = {des} 
-          categories = {cat}
-          pdfFile={menuFile} 
-          setDescription = {setDescription} 
-          setCategories = {setCategories}
-          setStore = {setStore} 
-          setStoreLogo = {setStoreLogo} 
-          setMenu={setMenu} />}
-        />
-      <Route path='/vendor' element={<VendorDashboard 
-          isActive = {isActive}
-          storeName = {storeName} 
-          logo = {logo}
-          description = {des} 
-          categories = {cat}
-          pdfFile={menuFile} 
-          setActive = {setActive} />}
-        />
+
+      {/*profile element go below here [Currently a work in progress] may need to add 
+      variable soon but im hoping i dont actually have to*/}
+      <Route path="/profile"  element={<Profile
+      
+      
+        />}/>
+
+      {/*vendordashboard element go below here [Work on this later]*/}
+
+      
       <Route path='/register' element={<ProtectedRoute component={Register}/>}/>
       {/*connect new route */}
       <Route path='/register/vendor' element={<ProtectedRoute component={VendorRegister}/>}/>
