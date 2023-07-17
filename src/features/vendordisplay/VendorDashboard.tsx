@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Navbar from "../../../components/Navbar";
-import Header from "../../../components/Header";
-import LocationBox from "../../../components/LocationBox";
-import ToggleSwitch from "../../../components/ToggleSwitch";
-import PDF from "../../../components/PDF";
+import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
+import LocationBox from "../../components/LocationBox";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import PDF from "../../components/PDF";
 
 import styled from 'styled-components';
 

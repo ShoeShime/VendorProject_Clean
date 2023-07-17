@@ -18,6 +18,7 @@ import { Link, matchPath, useLocation } from 'react-router-dom';
 
 const CustomerDashboard = () => {
     var selected = "all";
+    
     const selectCategory = (data) => {
         document.getElementById("search").value = "";
         document.getElementById(selected).classList.remove("active");
