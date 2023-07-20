@@ -7,6 +7,11 @@ import UserProfileInfo from "./UserProfileInfo";
 import EditButton from "./EditButton";
 import PasswordButton from "./PasswordButton";
 import {EditFormWithModal, ChangePasswordModalWithModal} from "./EditModal";
+import ProfileOptions from "./ProfileOptions";
+import LogoutModal from "./LogoutModal";
+
+
+import ProfileType from "./ProfileType";
 
 
 const Profile_Container = styled.div`
@@ -48,15 +53,15 @@ const ProfileContainer = ()=>{
 
             <ChangePasswordModalWithModal/>
 
-            <div>{/*Profile_Options*/}</div>
+            <ProfileOptions/>
 
-            <div>{/*Logout_Modal*/}</div>
+            <LogoutModal/>
 
             <div>{/*Email*/}</div>
 
             <div>{/*Phone*/}</div>
 
-            <div>{/*ProfileType*/}</div>
+            <ProfileType/>
 
 		</Profile_Container>
 	);

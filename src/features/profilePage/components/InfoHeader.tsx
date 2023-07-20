@@ -12,7 +12,7 @@ const Info_Header = styled.div`
 const InfoHeader = () =>{
 
 	return(
-		<Info_Header/>
+		<Info_Header>Profile Type:</Info_Header>
 	);
 }
 

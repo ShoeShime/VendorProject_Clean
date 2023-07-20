@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 
@@ -48,14 +48,31 @@ const Profile_Options = styled.div`
 
 
 const ProfileOptions = () =>{
+    const [logout, setLogout] = useState(false);
+
+    const [openModal, setOpenModal] = useState(false);
+
+    const setOption = (bool) => {
+        setLogout(bool);
+        if (!logout){
+            setOpenModal(true);
+        }
+    }
+
 
 	return(
 		<Profile_Options>
-            <div>
+            <div
+                onClick={() => setOption(false)}
+                className={`${logout ? "info_button_inactive" : "info_button_active"}`}
+            >
                 General
             </div>
             
-            <div>
+            <div
+                onClick={() => setOption(true)}
+                className={`${logout ? "logout_button_active" : "logout_button_inactive"}`}
+            >
                 Sign Out
             </div>
         </Profile_Options>

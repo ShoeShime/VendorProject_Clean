@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import InfoHeader from "./InfoHeader";
 
 const Profile_Type = styled.div`
     grid-area: t;
@@ -18,10 +19,14 @@ const Profile_Type = styled.div`
 
 
 const ProfileType = () =>{
+    var isVendor = "";
+
 
 	return(
 		<Profile_Type>
-            
+            <InfoHeader/>
+
+            {isVendor ? 'Vendor' : 'Customer'}
         </Profile_Type>
 	);
 }

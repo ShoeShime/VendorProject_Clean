@@ -87,6 +87,7 @@ export const ChangePasswordModalWithModal = () =>{
     var setPasswordModal = "";
     var setPasswordData = "";
 
+    
     return(
         <Edit_Modal>
             <ChangePasswordModal
