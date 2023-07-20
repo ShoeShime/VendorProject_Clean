@@ -6,7 +6,7 @@ import ProfileAvatar from "./ProfileAvatar";
 import UserProfileInfo from "./UserProfileInfo";
 import EditButton from "./EditButton";
 import PasswordButton from "./PasswordButton";
-
+import {EditFormWithModal, ChangePasswordModalWithModal} from "./EditModal";
 
 
 const Profile_Container = styled.div`
@@ -42,11 +42,11 @@ const ProfileContainer = ()=>{
 
 			<EditButton/>
 
-			<div>{/*EditModalWithForm*/}</div>
+			<EditFormWithModal/>
 
             <PasswordButton/>
 
-            <div>{/*EditModalWithPassword*/}</div>
+            <ChangePasswordModalWithModal/>
 
             <div>{/*Profile_Options*/}</div>
 

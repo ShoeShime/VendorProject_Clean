@@ -20,9 +20,9 @@ const Profile_Type = styled.div`
 const ProfileType = () =>{
 
 	return(
-		<div>
-
-		</div>
+		<Profile_Type>
+            
+        </Profile_Type>
 	);
 }
 

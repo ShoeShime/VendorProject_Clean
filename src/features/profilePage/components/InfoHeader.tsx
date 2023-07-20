@@ -12,9 +12,7 @@ const Info_Header = styled.div`
 const InfoHeader = () =>{
 
 	return(
-		<div>
-
-		</div>
+		<Info_Header/>
 	);
 }
 

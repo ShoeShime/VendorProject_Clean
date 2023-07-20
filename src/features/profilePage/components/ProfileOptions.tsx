@@ -50,9 +50,15 @@ const Profile_Options = styled.div`
 const ProfileOptions = () =>{
 
 	return(
-		<div>
-
-		</div>
+		<Profile_Options>
+            <div>
+                General
+            </div>
+            
+            <div>
+                Sign Out
+            </div>
+        </Profile_Options>
 	);
 }
 
