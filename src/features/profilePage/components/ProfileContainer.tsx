@@ -3,6 +3,11 @@ import styled from "styled-components";
 
 import ProfileHeader from "./ProfileHeader";
 import ProfileAvatar from "./ProfileAvatar";
+import UserProfileInfo from "./UserProfileInfo";
+import EditButton from "./EditButton";
+import PasswordButton from "./PasswordButton";
+
+
 
 const Profile_Container = styled.div`
     height: 92vh;
@@ -23,6 +28,7 @@ const Profile_Container = styled.div`
         "t t t t";
 `;
 
+
 const ProfileContainer = ()=>{
 
 	return(
@@ -32,9 +38,25 @@ const ProfileContainer = ()=>{
 
 			<ProfileAvatar/>
 
-			<div></div>
+			<UserProfileInfo/>
 
-			<div></div>
+			<EditButton/>
+
+			<div>{/*EditModalWithForm*/}</div>
+
+            <PasswordButton/>
+
+            <div>{/*EditModalWithPassword*/}</div>
+
+            <div>{/*Profile_Options*/}</div>
+
+            <div>{/*Logout_Modal*/}</div>
+
+            <div>{/*Email*/}</div>
+
+            <div>{/*Phone*/}</div>
+
+            <div>{/*ProfileType*/}</div>
 
 		</Profile_Container>
 	);

@@ -4,6 +4,9 @@ import styled from "styled-components";
 import Avatar from "../../../components/Avatar";
 
 
+//temp avatar pic that may need to be deleted and changed later
+import A_Pic from "../../ChatPage/ChatDisplay/misc/Dog.jpg";
+
 const Profile_Avatar = styled.div`
     grid-area: a;
     border-radius: 50%;
@@ -24,17 +27,22 @@ const Profile_Image = styled(Avatar)`
 `;
 
 
-//In The return statement below for Profile_Image include the line:
+//In The return statement below for Profile_Image may need to be changed for backend database:
 	//	src={profilePic} name={fName}
+    
 
 //May need to be included as a parameter for this file
 
 const ProfileAvatar = () =>{
 
+    var fname = "Thanh";
+    var profilePic = A_Pic;
+
+
 	return(
 		<Profile_Avatar>
 
-			<Profile_Image/>
+			<Profile_Image src={profilePic} name={fname}/>
 	
 		</Profile_Avatar>
 	);

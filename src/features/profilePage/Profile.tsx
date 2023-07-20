@@ -7,8 +7,8 @@ import Navbar from "../../components/Navbar";
 import Modal from "../../components/Modal";
 import SignoutModal from "../../components/SignOutModal";
 //import Avatar from "../../components/Avatar";
-import EditForm from "../../components/EditForm";
-import ChangePasswordModal from "../../components/ChangePasswordModal";
+//import EditForm from "../../components/EditForm";
+//import ChangePasswordModal from "../../components/ChangePasswordModal";
 
 //This pages' components
 import ProfileContainer from "./components/ProfileContainer";
