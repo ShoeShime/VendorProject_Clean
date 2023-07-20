@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Navbar from "../../components/Navbar";
 //import Header from "../../components/Header";
 import Modal from "../../components/Modal";
-import SignoutModal from "../../components/SignOutModal";
+//import SignoutModal from "../../components/SignOutModal";
 //import Avatar from "../../components/Avatar";
 //import EditForm from "../../components/EditForm";
 //import ChangePasswordModal from "../../components/ChangePasswordModal";

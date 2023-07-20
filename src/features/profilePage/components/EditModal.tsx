@@ -32,6 +32,7 @@ const Edit_Modal = styled.div`
 
 //May need to be included as a parameter for this file
 
+/*
 const EditModal = () =>{
     var isVendor = "";
     var profilePic = "";
@@ -64,11 +65,60 @@ const EditModal = () =>{
         </Edit_Modal>
 	);
 }
-
-//EditFormWithModal
-
-
-//ChangePasswordModalWithModal
+*/
 
 
-export default EditModal;
+//EditFormWithModal function
+export const EditFormWithModal = () =>{
+    var isVendor = "";
+    var profilePic = "";
+    var fName = "";
+    var lName = "";
+    var phone = "";
+    var storeName = "";
+    var logo = "";
+    var description = "";
+    var categories = "";
+    var openEdit = ""
+    var setOpenEdit = "";
+    var setEditData = "";
+
+
+    return(
+        <Edit_Modal>
+            <EditForm
+                isVendor = {isVendor} 
+                source = {profilePic} 
+                fName = {fName} 
+                lName = {lName} 
+                phone = {phone} 
+                storeName = {storeName} 
+                logo = {logo} 
+                description = {description} 
+                categories = {categories} 
+                open={openEdit} 
+                setOpenEdit={setOpenEdit} 
+                setEditData={setEditData}
+            />
+        </Edit_Modal>
+    );
+}
+
+//ChangePasswordModalWithModal function
+export const ChangePasswordModalWithModal = () =>{
+    var passwordModal = "";
+    var pass = "";
+    var setPasswordModal = "";
+    var setPasswordData = "";
+
+    return(
+        <Edit_Modal>
+            <ChangePasswordModal
+                open={passwordModal}
+                password = {pass} 
+                setPasswordModal={setPasswordModal} 
+                setPasswordData={setPasswordData}
+            />
+        </Edit_Modal>
+    );
+}
