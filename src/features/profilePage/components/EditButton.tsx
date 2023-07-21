@@ -18,12 +18,14 @@ const Edit_Button = styled.div`
 
 //Recheck again for setOpenEdit variable make sure it works correctly and as needed
 
+//What is the Edit_button suppose to do?
+
 const EditButton = () =>{
 	const [openEdit, setOpenEdit] = useState(false);
 
 
 	return(
-		<Edit_Button onClick={ ()=>setOpenEdit(true) }>
+		<Edit_Button onClick={() => setOpenEdit(true)}>
 			Edit Profile
 		</Edit_Button>
 	);

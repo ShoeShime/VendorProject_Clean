@@ -19,9 +19,9 @@ const Profile_Type = styled.div`
 
 
 const ProfileType = () =>{
-    var isVendor = "";
+    const isVendor = true;
 
-
+    
 	return(
 		<Profile_Type>
             <InfoHeader/>

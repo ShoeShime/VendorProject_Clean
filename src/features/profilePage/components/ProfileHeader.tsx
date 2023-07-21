@@ -8,8 +8,8 @@ const Profile_Header = styled.div`
     grid-area: h;
 `;
 
-const ProfileHeader = ()=>{
 
+const ProfileHeader = ()=>{
 
 	return(
 		<Profile_Header>

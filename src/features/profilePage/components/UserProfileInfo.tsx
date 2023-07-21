@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 
@@ -32,14 +32,14 @@ const UserID = styled.div`
 
 
 const UserProfileInfo = ()=>{
-	var fname = "thanh";
-	var lname = "stuff";
+    const [fName, setFname] = useState("Thanh");
+    const [lName, setLName] = useState("Nguyen");
 
-	var userID = "hello";
+	const userID = "@userID";
 
 	return(
 		<div>
-			<Username>{fname}, {lname}</Username>
+			<Username>{fName}, {lName}</Username>
 
 			<UserID>{userID}</UserID>
 

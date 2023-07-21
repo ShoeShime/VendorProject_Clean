@@ -38,7 +38,6 @@ const ProfileContainer = ()=>{
 
 	return(
 		<Profile_Container>
-
 			<ProfileHeader/>
 
 			<ProfileAvatar/>
@@ -62,7 +61,6 @@ const ProfileContainer = ()=>{
             <div>{/*Phone*/}</div>
 
             <ProfileType/>
-
 		</Profile_Container>
 	);
 }
