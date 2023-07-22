@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-import ProfileHeader from "./ProfileHeader";
-import ProfileAvatar from "./ProfileAvatar";
-import UserProfileInfo from "./UserProfileInfo";
-import EditButton from "./EditButton";
-import PasswordButton from "./PasswordButton";
-import {EditFormWithModal, ChangePasswordModalWithModal} from "./EditModal";
-import ProfileOptions from "./ProfileOptions";
-import LogoutModal from "./LogoutModal";
+import ProfileHeader from "./ProfileContainer_components/ProfileHeader";
+import ProfileAvatar from "./ProfileContainer_components/ProfileAvatar";
+import UserProfileInfo from "./ProfileContainer_components/UserProfileInfo";
+import EditButton from "./ProfileContainer_components/EditButton";
+import PasswordButton from "./ProfileContainer_components/PasswordButton";
+import {EditFormWithModal, ChangePasswordModalWithModal} from "./ProfileContainer_components/EditModal";
+import ProfileOptions from "./ProfileContainer_components/ProfileOptions";
+import LogoutModal from "./ProfileContainer_components/LogoutModal";
 
 
-import ProfileType from "./ProfileType";
+import ProfileType from "./ProfileContainer_components/ProfileType";
 
 
 const Profile_Container = styled.div`

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-import Avatar from "../../../components/Avatar";
+import Avatar from "../../../../components/Avatar";
 
 
 //temp avatar pic that may need to be deleted and changed later

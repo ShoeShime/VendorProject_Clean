@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-import SignOutModal from "../../../components/SignOutModal";
+import SignOutModal from "../../../../components/SignOutModal";
 
 const LogOut_Modal = styled.div`
     position: fixed;

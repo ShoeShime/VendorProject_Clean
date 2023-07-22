@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-import EditForm from "../../../components/EditForm";
-import ChangePasswordModal from "../../../components/ChangePasswordModal";
+import EditForm from "../../../../components/EditForm";
+import ChangePasswordModal from "../../../../components/ChangePasswordModal";
 
 import logoPicture from "../../../MarysLogo.png";
 
@@ -42,25 +42,11 @@ export const EditFormWithModal = () =>{
     const [cat, setCat] = useState("Taco, Ice cream, Churros, Soda, Coconut, Fruit cup");
     const [openEdit, setOpenEdit] = useState(false);
     //var setOpenEdit = "";
-    var setEditData = "";
 
-    /*
-    const setEditData = (data, src, firstName, lastName, phoneNumber, menuFile, store, logoPic, des, cat) => {
-        if (data === 'Continue'){
-            if (menuFile) {
-                props.setMenu(menuFile);
-            }
-            props.setStore(store);
-            props.setDescription(des);
-            props.setProfilePicture(src);
-            props.setFirstName(firstName);
-            props.setLastName(lastName);
-            props.setPhoneNumber(phoneNumber);
-            props.setStoreLogo(logoPic);
-            props.setCategories(cat);
-        }
-    }
-*/
+    //The variable below is suppose to be a function
+    const setEditData = "";
+
+ 
 
     return(
         <Edit_Modal>

@@ -42,7 +42,6 @@ const UserProfileInfo = ()=>{
 			<Username>{fName}, {lName}</Username>
 
 			<UserID>{userID}</UserID>
-
 		</div>
 	);
 }
