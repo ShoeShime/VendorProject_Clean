@@ -9,8 +9,8 @@ import PasswordButton from "./ProfileContainer_components/PasswordButton";
 import {EditFormWithModal, ChangePasswordModalWithModal} from "./ProfileContainer_components/EditModal";
 import ProfileOptions from "./ProfileContainer_components/ProfileOptions";
 import LogoutModal from "./ProfileContainer_components/LogoutModal";
-
-
+import UserProfileEmailInfo from "./ProfileContainer_components/UserProfileEmailInfo";
+import UserProfilePhoneInfo from "./ProfileContainer_components/UserProfilePhoneInfo";
 import ProfileType from "./ProfileContainer_components/ProfileType";
 
 
@@ -56,9 +56,9 @@ const ProfileContainer = ()=>{
 
             <LogoutModal/>
 
-            <div>{/*Email*/}</div>
+            <UserProfileEmailInfo/>
 
-            <div>{/*Phone*/}</div>
+            <UserProfilePhoneInfo/>
 
             <ProfileType/>
 		</Profile_Container>

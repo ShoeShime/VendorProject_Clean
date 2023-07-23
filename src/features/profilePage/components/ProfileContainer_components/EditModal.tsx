@@ -4,7 +4,7 @@ import styled from "styled-components";
 import EditForm from "../../../../components/EditForm";
 import ChangePasswordModal from "../../../../components/ChangePasswordModal";
 
-import logoPicture from "../../../MarysLogo.png";
+import logoPicture from "../../../../MarysLogo.png";
 
 
 const Edit_Modal = styled.div`

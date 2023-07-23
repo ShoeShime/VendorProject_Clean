@@ -25,7 +25,7 @@ const ProfileType = () =>{
     
 	return(
 		<Profile_Type>
-            <InfoHeader/>
+            <InfoHeader>ProfileType:</InfoHeader>
 
             {isVendor ? 'Vendor' : 'Customer'}
         </Profile_Type>

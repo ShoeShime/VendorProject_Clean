@@ -3,22 +3,9 @@ import styled from "styled-components";
 
 import InfoHeader from "./InfoHeader";
 
+
 const Email = styled.div`
     grid-area: m;
-    background-color: #EEEDED;
-    height: fit-content;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-`;
-
-const Phone = styled.div`
-    grid-area: p;
     background-color: #EEEDED;
     height: fit-content;
     padding: 10px;
@@ -38,25 +25,17 @@ const Phone = styled.div`
 	//stringname: Email:
 	//stringname: Phone Number:
 
-const UserProfileContactInfo = () =>{
-	const email = "";
-	const phone = ""
+const UserProfileEmailInfo = () =>{
+	const email = "some email";
 
 
 
 	return(
-		<div>
-			<Email>
-				<InfoHeader/>
-				{email}
-			</Email>
-
-			<Phone>
-				<InfoHeader/>
-				{phone}
-			</Phone>
-		</div>
+		<Email>
+			<InfoHeader>Email:</InfoHeader>
+			{email}
+		</Email>
 	);
 }
 
-export default UserProfileContactInfo;
+export default UserProfileEmailInfo;

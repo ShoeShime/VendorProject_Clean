@@ -9,10 +9,10 @@ const Info_Header = styled.div`
 `;
 
 
-const InfoHeader = () =>{
+const InfoHeader = ({children}) =>{
 
 	return(
-		<Info_Header/>
+		<Info_Header>{children}</Info_Header>
 	);
 }
 
