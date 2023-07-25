@@ -34,32 +34,51 @@ const Profile_Container = styled.div`
 `;
 
 
-const ProfileContainer = ()=>{
+const ProfileContainer = (
+        {isVendor, userID, email, 
+        profilePic, fName, lName, phone, pass, 
+        setProfilePicture, setFirstName, setLastName, setPhoneNumber, setPass,
+        storeName, logo, description, categories, pdfFile,
+        setDescription, setCategories, setStore, setStoreLogo, setMenu}
+    )=>{
+
+
 
 	return(
 		<Profile_Container>
 			<ProfileHeader/>
 
+            {/*2 props taken as paramters*/}
 			<ProfileAvatar/>
 
+            {/*3 props taken as paramters*/}
 			<UserProfileInfo/>
 
+            {/*0 props taken as paramters*/}
 			<EditButton/>
 
+            {/*12 props taken as paramters*/}
 			<EditFormWithModal/>
 
+            {/*2 props taken as paramters*/}
             <PasswordButton/>
 
+            {/*4 props taken as paramters*/}
             <ChangePasswordModalWithModal/>
 
+            {/*0 props taken as paramters*/}
             <ProfileOptions/>
 
+            {/*4 props taken as paramters*/}
             <LogoutModal/>
 
+            {/*1 props taken as paramters*/}
             <UserProfileEmailInfo/>
-
+            
+            {/*1 props taken as paramters*/}
             <UserProfilePhoneInfo/>
 
+            {/*1 props taken as paramters*/}
             <ProfileType/>
 		</Profile_Container>
 	);

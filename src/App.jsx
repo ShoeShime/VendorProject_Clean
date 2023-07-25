@@ -23,7 +23,6 @@ export const App = () => {
   console.log('app page loaded');
 
 
-
 /*connects a 'string' in my address bar to a component*/
   return (
     <Routes>
@@ -36,10 +35,7 @@ export const App = () => {
 
       {/*profile element go below here [Currently a work in progress] may need to add 
       variable soon but im hoping i dont actually have to*/}
-      <Route path="/profile"  element={<Profile
-      
-      
-        />}/>
+      <Route path="/profile"  element={<Profile/>}/>
 
       {/*vendordashboard element go below here [Work on this later]*/}
 
