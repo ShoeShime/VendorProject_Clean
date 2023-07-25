@@ -68,7 +68,7 @@ const Profile = () =>{
         setPhone(phoneNumber);
     }
       
-      //this funtion is used for the Vendor component and should be moved to its appropriate folder
+      //this funtion is used for the Vendor component and should be deleted and moved to its appropriate folder
       const setActive = (bool) => {
         setIsActive(bool);
       }
