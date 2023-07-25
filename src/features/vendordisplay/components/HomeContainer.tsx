@@ -52,17 +52,17 @@ const HomeContainer = ({isActive, storeName, logo, description, categories, pdfF
 			<CategoriesHeader/>
 
 			<VendorDescription
-				{...description}
+				description = {description}
 			/>
 
 			<VendorCategories
-				{...categories}
+				categories = {categories}
 			/>
 
 			<MenuHeader/>
 
 			<VendorMenu
-				{...pdfFile}
+				pdfFile = {pdfFile}
 			/>
 		</Home_Container>
 	);

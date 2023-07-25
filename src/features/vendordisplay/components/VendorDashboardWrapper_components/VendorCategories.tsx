@@ -15,10 +15,10 @@ const Categories = styled.div`
 `;
 
 
-const VendorCategories = ({}) =>{
+const VendorCategories = ({categories}) =>{
 
 	return(
-		<Categories></Categories>
+		<Categories>{categories}</Categories>
 	);
 }
 
