@@ -32,11 +32,10 @@ export const App = () => {
       <Route path='/chatRoom' element={<ChatRoom/>}/>
       <Route path='/map' element={<MapPage/>}/>
 
-      {/*profile element go below here [Currently a work in progress] may need to add 
-      variable soon but im hoping i dont actually have to*/}
+      {/*profile element go below here */}
       <Route path="/profile"  element={<Profile/>}/>
 
-      {/*vendordashboard element go below here [Work on this later]*/}
+      {/*vendordashboard element go below here*/}
       <Route path="/vendor" element={<VendorDashboard/>}/>
       
       <Route path='/register' element={<ProtectedRoute component={Register}/>}/>
