@@ -20,9 +20,7 @@ const Edit_Button = styled.div`
 
 //What is the Edit_button suppose to do?
 
-const EditButton = ({ }) =>{
-	const [openEdit, setOpenEdit] = useState(false);
-
+const EditButton = ({setOpenEdit}) =>{
 
 	return(
 		<Edit_Button onClick={() => setOpenEdit(true)}>

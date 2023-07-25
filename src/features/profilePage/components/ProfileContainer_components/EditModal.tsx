@@ -27,26 +27,9 @@ const Edit_Modal = styled.div`
 //prop variable(?) or type(?)
 
 //EditFormWithModal function
-export const EditFormWithModal = ({ }) =>{
-    const profileLink = "https://www.kindpng.com/picc/m/17-179199_chibi-christmas-anime-pinkhair-kawaii-anime-chibi-png.png";
-    const storeLogo = logoPicture;
-
-    const isVendor = true;
-    const [profilePic, setProfilePic] = useState(profileLink);
-    const [fName, setFName] = useState("Thanh");
-    const [lName, setLName] = useState("Nguyen");
-    const [phone, setPhone] = useState("949-558-4875");
-    const [storeName, setStoreName] = useState("Mary's URBAN Kitchen");
-    const [logo, setLogo] = useState(storeLogo);
-    const [des, setDes] = useState("Mary's Urban Kitchen Food Truck brings you comfort food with a twist.");
-    const [cat, setCat] = useState("Taco, Ice cream, Churros, Soda, Coconut, Fruit cup");
-    const [openEdit, setOpenEdit] = useState(false);
-    //var setOpenEdit = "";
-
-    //The variable below is suppose to be a function
-    const setEditData = "";
-
- 
+export const EditFormWithModal = ({isVendor, profilePic, 
+    fName, lName, phone, storeName, logo, des, cat, openEdit, 
+    setOpenEdit, setEditData}) =>{
 
     return(
         <Edit_Modal>
@@ -70,11 +53,7 @@ export const EditFormWithModal = ({ }) =>{
 
 
 //ChangePasswordModalWithModal function
-export const ChangePasswordModalWithModal = ({ }) =>{
-    var passwordModal = "";
-    var pass = "";
-    var setPasswordModal = "";
-    var setPasswordData = "";
+export const ChangePasswordModalWithModal = ({passwordModal, pass, setPasswordModal, setPasswordData}) =>{
 
     
     return(

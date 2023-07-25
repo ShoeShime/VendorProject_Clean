@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 import ProfileHeader from "./ProfileContainer_components/ProfileHeader";
@@ -42,6 +42,51 @@ const ProfileContainer = (
         setDescription, setCategories, setStore, setStoreLogo, setMenu}
     )=>{
 
+    const [logout, setLogout] = useState(false);
+
+    const [openModal, setOpenModal] = useState(false);
+    const [openEdit, setOpenEdit] = useState(false);
+    const [chooseData, setChooseData] = useState("");
+    
+    const [passwordModal, setPasswordModal] = useState(false);
+    const [passwordModalChoice, setPasswordModalChoice] = useState(null);
+
+    const setData = (data) => {
+        setChooseData(data);
+    }
+
+    const setPasswordData = (data, password) => {
+        setPasswordModalChoice(data);
+        if (data === 'Continue'){
+            setPass(password);
+        }
+    }
+
+    const setOption = (bool) => {
+        setLogout(bool);
+        if (!logout){
+            setOpenModal(true);
+        }
+    }
+
+    const setEditData = (data, src, firstName, lastName, phoneNumber, menuFile, store, logoPic, des, cat) => {
+        if (data === 'Continue'){
+            if (menuFile) {
+                setMenu(menuFile);
+            }
+            setStore(store);
+            setDescription(des);
+            setProfilePicture(src);
+            setFirstName(firstName);
+            setLastName(lastName);
+            setPhoneNumber(phoneNumber);
+            setStoreLogo(logoPic);
+            setCategories(cat);
+        }
+    }
+
+
+
 
 
 	return(
@@ -49,37 +94,82 @@ const ProfileContainer = (
 			<ProfileHeader/>
 
             {/*2 props taken as paramters*/}
-			<ProfileAvatar/>
+			<ProfileAvatar 
+                profilePic = {profilePic}
+                fName = {fName}
+            />
 
             {/*3 props taken as paramters*/}
-			<UserProfileInfo/>
+			<UserProfileInfo 
+                fName = {fName}
+                lName = {lName}
+                userID = {userID}
+            />
 
             {/*0 props taken as paramters*/}
-			<EditButton/>
+            {/*as a function or unknown variable in the component???*/}
+			<EditButton
+                setOpenEdit={setOpenEdit}
+            />
 
             {/*12 props taken as paramters*/}
-			<EditFormWithModal/>
+			<EditFormWithModal
+                isVendor = {isVendor}
+                profilePic = {profilePic}
+                fName = {fName}
+                lName = {lName}
+                phone = {phone}
+                storeName = {storeName}
+                logo = {logo}
+                des = {description}
+                cat = {categories}
+                openEdit = {openEdit}
+                setOpenEdit = {setOpenEdit}
+                setEditData = {setEditData}
+            />
 
             {/*2 props taken as paramters*/}
-            <PasswordButton/>
+            <PasswordButton
+                setPasswordModal = {setPasswordModal}
+                setPasswordModalChoice = {setPasswordModalChoice}
+            />
 
             {/*4 props taken as paramters*/}
-            <ChangePasswordModalWithModal/>
+            <ChangePasswordModalWithModal
+                passwordModal = {passwordModal}
+                pass = {pass}
+                setPasswordModal = {setPasswordModal}
+                setPasswordData = {setPasswordData}
+            />
 
             {/*0 props taken as paramters*/}
-            <ProfileOptions/>
+            <ProfileOptions
+                setLogout = {setLogout}
+                setOpenModal = {setOpenModal}
+                logout = {logout}
+            />
 
             {/*4 props taken as paramters*/}
-            <LogoutModal/>
+            <LogoutModal
+                openModal = {openModal}
+                setOpenModal = {setOpenModal}
+                setChooseData = {setChooseData}
+            />
 
             {/*1 props taken as paramters*/}
-            <UserProfileEmailInfo/>
+            <UserProfileEmailInfo
+                email = {email}
+            />
             
             {/*1 props taken as paramters*/}
-            <UserProfilePhoneInfo/>
+            <UserProfilePhoneInfo
+                phone = {phone}
+            />
 
             {/*1 props taken as paramters*/}
-            <ProfileType/>
+            <ProfileType
+                isVendor = {isVendor}
+            />
 		</Profile_Container>
 	);
 }

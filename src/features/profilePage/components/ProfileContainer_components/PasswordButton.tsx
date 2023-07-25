@@ -19,9 +19,7 @@ const Password_Button = styled.div`
 `;
 
 
-const PasswordButton = ({ }) =>{
-    const [passwordModal, setPasswordModal] = useState(false);
-    const [passwordModalChoice, setPasswordModalChoice] = useState(null);
+const PasswordButton = ({setPasswordModal, setPasswordModalChoice}) =>{
 
 	return(
 		<Password_Button onClick={() => setPasswordModal(true)}>

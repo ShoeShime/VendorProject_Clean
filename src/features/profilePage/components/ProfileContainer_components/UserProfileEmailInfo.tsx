@@ -25,9 +25,7 @@ const Email = styled.div`
 	//stringname: Email:
 	//stringname: Phone Number:
 
-const UserProfileEmailInfo = ({ }) =>{
-	const email = "some email";
-
+const UserProfileEmailInfo = ({email}) =>{
 
 
 	return(

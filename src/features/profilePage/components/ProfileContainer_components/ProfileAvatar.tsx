@@ -33,19 +33,7 @@ const Profile_Image = styled(Avatar)`
 
 //May need to be included as a parameter for this file
 
-const ProfileAvatar = ({ }) =>{
-    const profileLink = "https://www.kindpng.com/picc/m/17-179199_chibi-christmas-anime-pinkhair-kawaii-anime-chibi-png.png";
-    const [profilePic, setProfilePic] = useState(profileLink);
-
-    const [fName, setFName] = useState("Thanh");
-
-    const setProfilePicture = (pictureLink) => {
-        setProfilePic(pictureLink);
-      }
-
-    const setFirstName = (firstName) => {
-        setFName(firstName);
-    }
+const ProfileAvatar = ({profilePic, fName }) =>{
 
 	return(
 		<Profile_Avatar>

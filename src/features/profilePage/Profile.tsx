@@ -1,7 +1,8 @@
 import {useState} from "react";
 import styled from "styled-components";
 
-//Picture used for components: add more details about its use later
+//Picture used for components: 
+    //add more details about its use later
 import logoPicture from "../../MarysLogo.png";
 import samplePDF from "../../Marys-FoodTruck-Menu.pdf";
 
@@ -49,52 +50,52 @@ const Profile = () =>{
     const [des, setDes] = useState("Mary's Urban Kitchen Food Truck brings you comfort food with a twist.");
     const [cat, setCat] = useState("Taco, Ice cream, Churros, Soda, Coconut, Fruit cup");
     const [logo, setLogo] = useState(storeLogo);
-
     
     //Set functions: This boilerplate should be moved to a separate file
     const setProfilePicture = (pictureLink) => {
         setProfilePic(pictureLink);
-      }
+    }
     
-      const setFirstName = (firstName) => {
+    const setFirstName = (firstName) => {
         setFName(firstName);
-      }
+    }
     
-      const setLastName = (lastName) => {
+    const setLastName = (lastName) => {
         setLName(lastName);
-      }
+    }
     
-      const setPhoneNumber = (phoneNumber) => {
+    const setPhoneNumber = (phoneNumber) => {
         setPhone(phoneNumber);
-      }
-    
+    }
+      
+      //this funtion is used for the Vendor component and should be moved to its appropriate folder
       const setActive = (bool) => {
         setIsActive(bool);
       }
     
-      const setPass = (pass) => {
+    const setPass = (pass) => {
         setPassword(pass);
-      }
+    }
       
-      const setMenu = (menu) => {
+    const setMenu = (menu) => {
         setMenuFile(menu);
-      }
+    }
     
-      const setStore = (name) => {
+    const setStore = (name) => {
         setStoreName(name);
-      }
+    }
     
-      const setDescription = (description) => {
+    const setDescription = (description) => {
         setDes(description);
-      }
+    }
     
-      const setCategories = (caterories) => {
+    const setCategories = (caterories) => {
         setCat(caterories);
-      }
+    }
     
-      const setStoreLogo = (logoPic) => {
+    const setStoreLogo = (logoPic) => {
         setLogo(logoPic);
-      }
+    }
 
     return(
         <div>

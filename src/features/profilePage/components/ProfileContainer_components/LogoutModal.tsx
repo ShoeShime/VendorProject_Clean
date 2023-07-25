@@ -18,10 +18,11 @@ const LogOut_Modal = styled.div`
     //setOpenModal={setOpenModal}
     //setData={setData}
 
-const LogoutModal = ({ }) =>{
+const LogoutModal = ({openModal, setOpenModal, setChooseData}) =>{
+/*
     const [openModal, setOpenModal] = useState(false);
     const [chooseData, setChooseData] = useState("");
-
+*/
     const setData = (data) => {
         setChooseData(data);
     }

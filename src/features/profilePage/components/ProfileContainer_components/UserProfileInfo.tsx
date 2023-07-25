@@ -31,11 +31,7 @@ const UserID = styled.div`
 //May need to be included as a parameter for this file
 
 
-const UserProfileInfo = ()=>{
-    const [fName, setFname] = useState("Thanh");
-    const [lName, setLName] = useState("Nguyen");
-
-	const userID = "@userID";
+const UserProfileInfo = ({fName, lName, userID})=>{
 
 	return(
 		<div>
