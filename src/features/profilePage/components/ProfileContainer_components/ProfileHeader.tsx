@@ -8,12 +8,16 @@ const Profile_Header = styled.div`
     grid-area: h;
 `;
 
+//src/components/Header.js
+	//This is responsible for rendering the users' profile picture
 
 const ProfileHeader = ()=>{
 
 	return(
 		<Profile_Header>
+			
 			<Header src="https://www.kindpng.com/picc/m/108-1084597_real-estate-hd-png-download.png" username="Gumbly"/>
+			
 		</Profile_Header>
 	);
 }

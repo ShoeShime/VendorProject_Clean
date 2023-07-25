@@ -27,7 +27,7 @@ const Edit_Modal = styled.div`
 //prop variable(?) or type(?)
 
 //EditFormWithModal function
-export const EditFormWithModal = () =>{
+export const EditFormWithModal = ({ }) =>{
     const profileLink = "https://www.kindpng.com/picc/m/17-179199_chibi-christmas-anime-pinkhair-kawaii-anime-chibi-png.png";
     const storeLogo = logoPicture;
 
@@ -70,7 +70,7 @@ export const EditFormWithModal = () =>{
 
 
 //ChangePasswordModalWithModal function
-export const ChangePasswordModalWithModal = () =>{
+export const ChangePasswordModalWithModal = ({ }) =>{
     var passwordModal = "";
     var pass = "";
     var setPasswordModal = "";

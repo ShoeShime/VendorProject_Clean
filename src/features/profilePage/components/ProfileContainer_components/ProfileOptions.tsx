@@ -47,7 +47,7 @@ const Profile_Options = styled.div`
 `;
 
 
-const ProfileOptions = () =>{
+const ProfileOptions = ({ }) =>{
     const [logout, setLogout] = useState(false);
 
     const [openModal, setOpenModal] = useState(false);

@@ -33,7 +33,7 @@ const Profile_Image = styled(Avatar)`
 
 //May need to be included as a parameter for this file
 
-const ProfileAvatar = () =>{
+const ProfileAvatar = ({ }) =>{
     const profileLink = "https://www.kindpng.com/picc/m/17-179199_chibi-christmas-anime-pinkhair-kawaii-anime-chibi-png.png";
     const [profilePic, setProfilePic] = useState(profileLink);
 

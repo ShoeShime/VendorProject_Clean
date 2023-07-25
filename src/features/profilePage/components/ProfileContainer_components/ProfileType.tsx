@@ -19,7 +19,7 @@ const Profile_Type = styled.div`
 
 //Place import string name in the InfoHeader element
     //StringName: ProfileType:
-const ProfileType = () =>{
+const ProfileType = ({ }) =>{
     const isVendor = true;
 
     
