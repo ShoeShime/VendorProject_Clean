@@ -51,6 +51,7 @@ const ProfileContainer = (
     const [passwordModal, setPasswordModal] = useState(false);
     const [passwordModalChoice, setPasswordModalChoice] = useState(null);
 
+    //The function below is probably not needed anymore
     const setData = (data) => {
         setChooseData(data);
     }
@@ -62,6 +63,8 @@ const ProfileContainer = (
         }
     }
 
+    //The function below is probably not needed anymore
+    /*
     const setOption = (bool) => {
         setLogout(bool);
         if (!logout){
@@ -69,6 +72,7 @@ const ProfileContainer = (
         }
     }
 
+    */
     const setEditData = (data, src, firstName, lastName, phoneNumber, menuFile, store, logoPic, des, cat) => {
         if (data === 'Continue'){
             if (menuFile) {
@@ -84,10 +88,6 @@ const ProfileContainer = (
             setCategories(cat);
         }
     }
-
-
-
-
 
 	return(
 		<Profile_Container>
@@ -143,6 +143,7 @@ const ProfileContainer = (
             />
 
             {/*0 props taken as paramters*/}
+            {/*I thought it was 0 props, but its probably 3*/}
             <ProfileOptions
                 setLogout = {setLogout}
                 setOpenModal = {setOpenModal}
@@ -150,6 +151,7 @@ const ProfileContainer = (
             />
 
             {/*4 props taken as paramters*/}
+            {/*I thought it was just 4 props, but its probably just 3*/}
             <LogoutModal
                 openModal = {openModal}
                 setOpenModal = {setOpenModal}
