@@ -17,7 +17,6 @@ import CustomerRegister from './features/vendordisplay/components/CustomerRegist
 import UseVendorData from "./features/vendordisplay/components/UseVendorData";
 
 
-
 export const App = () => {
   
   console.log('app page loaded');
@@ -38,7 +37,7 @@ export const App = () => {
       <Route path="/profile"  element={<Profile/>}/>
 
       {/*vendordashboard element go below here [Work on this later]*/}
-
+      <Route path="/vendor" element={<VendorDashboard/>}/>
       
       <Route path='/register' element={<ProtectedRoute component={Register}/>}/>
       {/*connect new route */}

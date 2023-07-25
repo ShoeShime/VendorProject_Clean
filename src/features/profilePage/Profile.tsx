@@ -16,9 +16,6 @@ import Modal from "../../components/Modal";
 //This pages' components
 import ProfileContainer from "./components/ProfileContainer";
 
-
-
-
 const Profile = () =>{
     console.log("Loading Profile Page");
 
