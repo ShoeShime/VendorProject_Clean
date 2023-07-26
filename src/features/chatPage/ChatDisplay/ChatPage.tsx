@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import ChatHeaderPage from "./ChatHeaderPage";
-import MessageBox from "./MessageBox";
+import ChatHeaderPage from "./components/ChatHeaderPage";
+import MessageBox from "./components/MessageBox";
 
-import Navbar from "../../../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 
 
 //Background

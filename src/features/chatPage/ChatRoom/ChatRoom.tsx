@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
-import ChatHeader from "./ChatHeaderRoom";
-import MessageSender from "./MessageSender";
+import ChatHeader from "./components/ChatHeaderRoom";
+import MessageSender from "./components/MessageSender";
 
 //Background
 const M_body = styled.body`
