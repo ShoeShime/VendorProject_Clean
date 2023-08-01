@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+
+
 import Conversation from "./Conversation";
+
+//Assets or Images
 import CatPicture from "../misc/ThumbsUp.jpg";
 import GoofyCat from "../misc/GoofyCat.jpeg";
+
 
 const MessageWrapper = styled.div`
 	background-color: #FFFFFF;

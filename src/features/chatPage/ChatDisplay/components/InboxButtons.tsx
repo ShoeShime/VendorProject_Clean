@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 
 
+//This component allows the user to message a new user
 const InboxButtons = () =>{
 
 

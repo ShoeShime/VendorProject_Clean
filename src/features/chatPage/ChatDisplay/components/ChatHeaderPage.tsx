@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+
+
 import SearchMessage from "./SearchMessage";
+
+//Assets or Images
 import GoofyDog from "../misc/Dog.jpg";
+
 
 //Header, The Top of the Page
 const MessageHeader = styled.header`
