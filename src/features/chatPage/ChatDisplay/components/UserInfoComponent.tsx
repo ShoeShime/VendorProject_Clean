@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 
-//start styled components here:
+const UserInfoWrapper = styled.div`
+
+	display: flex;
+
+	align-items: center;
+`;
+
 const Pfp = styled.img`
 
 	width: 50px;
@@ -14,7 +20,7 @@ const Pfp = styled.img`
 
 const UserName = styled.p`
 
-
+	margin-left: 10px;
 `;
 
 
@@ -22,13 +28,14 @@ const UserInfoComponent = ({username, profilepicture}) =>{
 
 	//Create a User Info Wrapper to edit the username and profile picture properly
 	return(
-		<>
-      <UserName>{username}</UserName>
+		<UserInfoWrapper>
 			<Pfp 
 				className="User-image" 
 				src={profilepicture} 
-				alt="User icon" />
-		</>
+				alt="User icon" 
+			/>
+			<UserName>{username}</UserName>
+		</UserInfoWrapper>
 	);
 }
 
