@@ -48,7 +48,7 @@ const SearchPicture = styled.img`
 	
 `;
 
-const SearchMessage = () =>{
+const SearchBarComponent = () =>{
 
 
 	return(
@@ -61,4 +61,4 @@ const SearchMessage = () =>{
 	);
 }
 
-export default SearchMessage;
+export default SearchBarComponent;

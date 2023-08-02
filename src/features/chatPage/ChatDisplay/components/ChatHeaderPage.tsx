@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 
-import SearchMessage from "./SearchMessage";
+import TitleComponent from "./TitleComponent";
+import UserInfoComponent from "./UserInfoComponent";
+import SearchBarComponent from "./SearchBarComponent";
+import NewMessageIconComponent from "./NewMessageIconComponent";
+
 
 //Assets or Images
 import GoofyDog from "../misc/Dog.jpg";
@@ -26,44 +30,26 @@ const MessageHeader = styled.header`
 
 `;
 
-const HeaderContainer = styled.div`
 
-	display: flex;
-
-	align-items: center;
-	justify-content: space-between;
-
-	height: 50%;
-`;
-
-const MessageTitle = styled.p`
-
-	color: #333333;
-
-	font-size: 3em;
-	font-weight: bold;
-
-`;
-
-const UserIcon = styled.img`
-
-	height: 4em;
-	width: 4em;
-
-	border-radius: 50%;
-`;
-
+//This component should include
+	//A Title Component
+	//A UserInfo Component
+	//A SearchBar Component
+	//New MessageIcon Component
 const ChatHeaderPage = () =>{
+
+	//Include variables that would store the users information
+		//username
+		//profilePic 
+
 
 	return(
 		<MessageHeader>
 
-			<HeaderContainer>
-				<MessageTitle className="Title">Message</MessageTitle>
-				<UserIcon className="User-Image" src={GoofyDog} alt="User icon"/>
-			</HeaderContainer>
-
-			<SearchMessage/>
+			<TitleComponent/>
+			<UserInfoComponent/>
+			<SearchBarComponent/>
+			<NewMessageIconComponent/>
 
 		</MessageHeader>
 	);
