@@ -8,10 +8,6 @@ import SearchBarComponent from "./SearchBarComponent";
 import NewMessageIconComponent from "./NewMessageIconComponent";
 
 
-//Assets or Images
-import GoofyDog from "../misc/Dog.jpg";
-
-
 //Header, The Top of the Page
 const MessageHeader = styled.header`
 	background-color: #FFFFFF;
@@ -36,10 +32,10 @@ const MessageHeader = styled.header`
 	//A UserInfo Component
 	//A SearchBar Component
 	//New MessageIcon Component
-const ChatHeaderPage = () =>{
+const ChatPageHeader = () =>{
 
 	//Include variables that would store the users information
-		//username
+		//Username
 		//profilePic 
 
 
@@ -55,4 +51,4 @@ const ChatHeaderPage = () =>{
 	);
 }
 
-export default ChatHeaderPage;
+export default ChatPageHeader;

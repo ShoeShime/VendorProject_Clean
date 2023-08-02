@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-import ChatHeaderPage from "./components/ChatHeaderPage";
+import ChatPageHeader from "./components/ChatPageHeader";
 import MessageBox from "./components/MessageBox";
 
 //Global components
@@ -24,7 +24,7 @@ export function ChatPage(){
 
 	return(
 		<ChatPageBody>
-			<ChatHeaderPage/>
+			<ChatPageHeader/>
 
 			<MessageBox/>
 			
