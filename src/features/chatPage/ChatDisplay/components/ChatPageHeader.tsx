@@ -4,8 +4,11 @@ import styled from "styled-components";
 
 import TitleComponent from "./TitleComponent";
 import UserInfoComponent from "./UserInfoComponent";
-import SearchBarComponent from "./SearchBarComponent";
 import NewMessageIconComponent from "./NewMessageIconComponent";
+import SearchBarComponent from "./SearchBarComponent";
+
+//Assets or Images
+import GoofyDog from "../misc/Dog.jpg";
 
 
 //Header, The Top of the Page
@@ -15,14 +18,24 @@ const MessageHeader = styled.header`
 	display: flex;
 	flex-direction: column;
 
-	align-items: strech;
-	justify-content: flex-end;
+	align-items: stretch;
+	justify-content: space-between;
 
 	height: 30%;
 	max-height: 135px;
 
 	padding: 0 10px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+
+`;
+
+const HeaderContent = styled.div`
+
+
+  display: flex;
+
+	align-items: center;
+	justify-content: space-between;
 
 `;
 
@@ -34,21 +47,21 @@ const MessageHeader = styled.header`
 	//New MessageIcon Component
 const ChatPageHeader = () =>{
 
-	//Include variables that would store the users information
-		//Username
-		//profilePic 
+		const username = "John Doe";
+		const profilePic = GoofyDog;
 
-	//Add a new header that wraps around both
-		//TitleComponent and UserInfoComponent
-		//and possibly for NewMessageIconComponent
 	return(
 		<MessageHeader>
-
+			
+			<HeaderContent>
 				<TitleComponent/>
-				<UserInfoComponent/>
+				<UserInfoComponent
+          username = {username}		
+					profilepicture = {profilePic}
+				/>
 				<NewMessageIconComponent/>
-			
-			
+			</HeaderContent>
+
 			<SearchBarComponent/>
 		</MessageHeader>
 	);

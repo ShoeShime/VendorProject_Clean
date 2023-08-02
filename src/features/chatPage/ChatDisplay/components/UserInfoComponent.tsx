@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 
-//Assets or Images
-import GoofyDog from "../misc/Dog.jpg";
-
-
 //start styled components here:
 const Pfp = styled.img`
 
@@ -22,15 +18,16 @@ const UserName = styled.p`
 `;
 
 
-const UserInfoComponent = () =>{
-	//Users Profile Picture would be taken from the database
-		//This is only a temp profile picture
-	const profilepicture = GoofyDog;
+const UserInfoComponent = ({username, profilepicture}) =>{
 
+	//Create a User Info Wrapper to edit the username and profile picture properly
 	return(
 		<>
-			<Pfp ClassName="User-image" src={profilepicture} alt="User icon" />
-			<UserName/>
+      <UserName>{username}</UserName>
+			<Pfp 
+				className="User-image" 
+				src={profilepicture} 
+				alt="User icon" />
 		</>
 	);
 }
