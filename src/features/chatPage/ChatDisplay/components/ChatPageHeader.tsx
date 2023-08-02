@@ -38,15 +38,18 @@ const ChatPageHeader = () =>{
 		//Username
 		//profilePic 
 
-
+	//Add a new header that wraps around both
+		//TitleComponent and UserInfoComponent
+		//and possibly for NewMessageIconComponent
 	return(
 		<MessageHeader>
 
-			<TitleComponent/>
-			<UserInfoComponent/>
+				<TitleComponent/>
+				<UserInfoComponent/>
+				<NewMessageIconComponent/>
+			
+			
 			<SearchBarComponent/>
-			<NewMessageIconComponent/>
-
 		</MessageHeader>
 	);
 }
