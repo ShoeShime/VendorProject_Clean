@@ -5,7 +5,9 @@ import styled from "styled-components";
 //Global components
 import Navbar from "../../../components/Navbar";
 
-
+//ChatPage components
+import Channel from "./components/Channel";
+import Threads from "./components/Threads";
 
 
 
@@ -16,50 +18,26 @@ const Chat = styled.div`
 
 
 	height: 100%;
-	width: 100%;
+	width: 100%;S
 `;
 
-//These are placeholder components
-const Channel = styled.div`
 
-`;
+//Channel components
+	//This component renders a single chatroom for the user 
+	//to view if they have selected a channel
 
-const Window = styled.div`
 
-`
+//Threads components
+	//this components shows users different chats
 
-const ChannelHeader = styled.div`
 
-`;
-
-const MessageList = styled.div`
-
-`;
-
-const MessageInput = styled.div`
-
-`;
-
-const Threads = styled.div`
-
-`;
-
-export function ChatPage(){
-
+const ChatPage = () =>{
 
 	return(
 		<>
 			<Chat>
-				<Channel>
-					<Window>
+				<Channel/>
 
-						<ChannelHeader/>
-						<MessageList/>
-						<MessageInput/>
-
-					</Window>
-				</Channel>
-				
 				<Threads/>
 			</Chat>
 
