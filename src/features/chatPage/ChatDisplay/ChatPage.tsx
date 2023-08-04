@@ -28,7 +28,7 @@ const Chat = styled.div`
 
 
 //Threads components
-	//this components shows users different chats
+	//this components shows users different chats rooms
 
 
 const ChatPage = () =>{
