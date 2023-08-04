@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 
-import ChatPageHeader from "./components/ChatPageHeader";
-import MessageBox from "./components/MessageBox";
-
 //Global components
 import Navbar from "../../../components/Navbar";
 
 
+
+
+
 //Background
-const ChatPageBody = styled.body`
+const Chat = styled.div`
 	position: fixed;
 	background-color: #FFFFFF;
 
@@ -19,17 +19,52 @@ const ChatPageBody = styled.body`
 	width: 100%;
 `;
 
+//These are placeholder components
+const Channel = styled.div`
+
+`;
+
+const Window = styled.div`
+
+`
+
+const ChannelHeader = styled.div`
+
+`;
+
+const MessageList = styled.div`
+
+`;
+
+const MessageInput = styled.div`
+
+`;
+
+const Threads = styled.div`
+
+`;
+
 export function ChatPage(){
 
 
 	return(
-		<ChatPageBody>
-			<ChatPageHeader/>
+		<>
+			<Chat>
+				<Channel>
+					<Window>
 
-			<MessageBox/>
-			
+						<ChannelHeader/>
+						<MessageList/>
+						<MessageInput/>
+
+					</Window>
+				</Channel>
+				
+				<Threads/>
+			</Chat>
+
 			<Navbar/>
-		</ChatPageBody>
+		</>
 	);
 }
 
