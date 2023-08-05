@@ -7,7 +7,6 @@ import { CallbackPage } from './features/misc/CallbackPage'
 import { Route, Routes } from 'react-router-dom'
 import { ProtectedRoute } from './lib/ProtectedRoute'
 import ChatPage from './features/ChatPage/ChatDisplay/ChatPage'
-import ChatRoom from './features/ChatPage/ChatRoom/ChatRoom'
 import MapPage from './features/mapPage/MapPage';
 import Profile from './features/profilePage/Profile';
 import CustomerDashboard from './features/customerdisplay/components/CustomerDashboard'
@@ -29,7 +28,6 @@ export const App = () => {
       <Route path='/callback' element={<ProtectedRoute component={CallbackPage} /> } />
       <Route path='/customer' element={<ProtectedRoute component={CustomerDashboard} /> } />
       <Route path='/chat' element={<ChatPage/>}/>
-      <Route path='/chatRoom' element={<ChatRoom/>}/>
       <Route path='/map' element={<MapPage/>}/>
 
       {/*profile element go below here */}
