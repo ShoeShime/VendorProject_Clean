@@ -24,11 +24,11 @@ const Chat = styled.div`
 
 //Channel components
 	//This component renders a single chatroom for the user 
-	//to view if they have selected a channeldrrrr
+	//to view if they have selected a channel
 
 
 //Threads components
-	//this components shows users different chats rooms
+	//this components shows users different chats rooms that are available
 
 
 const ChatPage = () =>{
