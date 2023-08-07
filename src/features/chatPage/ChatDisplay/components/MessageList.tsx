@@ -9,7 +9,7 @@ const MessageContainer = styled.div`
 	align-items: flex-start;
 	justify-content: flex-end;
 
-	height: calc(100vh - 115px);
+	height: 100ch;
 	padding: 10px;
 
 	overflow-y: auto;
@@ -17,20 +17,73 @@ const MessageContainer = styled.div`
 
 const SentMessageWrapper = styled.div`
 
+	background-color: #1982FC;
+
+	flex-direction: row-reverse;
+	align-self: flex-end;
+
+	border-radius: 25px;
+
+	width: 50%;
+
+	padding: 0.5em;
+
+	margin-top: 5px;
+	margin-left: 3px;
+
 `;
 
 const SentMessageText = styled.span`
+	color: #FFFFFF;
+
+	text-align: right;
+
+	margin-inline-start: 9px;
+	margin-inline-end: 9px;
 
 `;
 
 const RecievedMessageWrapper = styled.div`
 
+	background-color: #AAAAAA;
+
+	flex-direction: row-reverse;
+	align-self: flex-start;
+
+	border-radius: 25px;
+
+	width: 50%;
+
+	padding: 0.5em;
+
+	margin-top: 5px;
+	margin-left: 3px;
+
 `;
 
 const RecievedMessageText = styled.span`
+	color: #000000;
+
+	text-align: right;
+
+	margin-inline-start: 9px;
+	margin-inline-end: 9px;
+`;
+
+const RecievedAvatar = styled.img`
+
+	height: 50px;
+	width: 50px;
+
 
 `;
 
+const ReceivedWrapper = styled.div`
+
+	display: flex;
+	flex-direction: row;
+
+`;
 
 
 const MessageList = () =>{
@@ -38,14 +91,19 @@ const MessageList = () =>{
 
 	return(
 		<>
-			<MessageContainer>
-				<RecievedMessageWrapper>
-					<RecievedMessageText>
-						Test 1: This is a bunch of line of text, would this work hopefully. 
-						I need to add more text horray okay a bit more, this looks kinda nice.
-						Adding More Text, Adding More Text, Adding More Text, Adding More Text...
-					</RecievedMessageText>
-				</RecievedMessageWrapper>
+			<MessageContainer className="Messaged Displayed">
+				<ReceivedWrapper>
+					<RecievedAvatar>
+
+					</RecievedAvatar>
+					<RecievedMessageWrapper>
+						<RecievedMessageText>
+							Test 1: This is a bunch of line of text, would this work hopefully. 
+							I need to add more text horray okay a bit more, this looks kinda nice.
+							Adding More Text, Adding More Text, Adding More Text, Adding More Text...
+						</RecievedMessageText>
+					</RecievedMessageWrapper>
+				</ReceivedWrapper>
 
 				<SentMessageWrapper>
 					<SentMessageText>
