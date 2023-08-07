@@ -9,7 +9,6 @@ const MessageContainer = styled.div`
 	align-items: flex-start;
 	justify-content: flex-end;
 
-	height: 100ch;
 	padding: 10px;
 
 	overflow-y: auto;
@@ -26,7 +25,7 @@ const SentMessageWrapper = styled.div`
 
 	width: 50%;
 
-	padding: 0.5em;
+	padding: 0.7em;
 
 	margin-top: 5px;
 	margin-left: 3px;
@@ -43,6 +42,20 @@ const SentMessageText = styled.span`
 
 `;
 
+const ReceivedWrapper = styled.div`
+
+	display: flex;
+
+`;
+
+const RecievedAvatar = styled.img`
+
+	height: 50px;
+	width: 50px;
+
+	border-radius: 50%;
+`;
+
 const RecievedMessageWrapper = styled.div`
 
 	background-color: #AAAAAA;
@@ -54,7 +67,7 @@ const RecievedMessageWrapper = styled.div`
 
 	width: 50%;
 
-	padding: 0.5em;
+	padding: 0.7em;
 
 	margin-top: 5px;
 	margin-left: 3px;
@@ -70,21 +83,6 @@ const RecievedMessageText = styled.span`
 	margin-inline-end: 9px;
 `;
 
-const RecievedAvatar = styled.img`
-
-	height: 50px;
-	width: 50px;
-
-
-`;
-
-const ReceivedWrapper = styled.div`
-
-	display: flex;
-	flex-direction: row;
-
-`;
-
 
 const MessageList = () =>{
 
@@ -92,7 +90,7 @@ const MessageList = () =>{
 	return(
 		<>
 			<MessageContainer className="Messaged Displayed">
-				<ReceivedWrapper>
+				<ReceivedWrapper className="RecievedWrapper">
 					<RecievedAvatar>
 
 					</RecievedAvatar>

@@ -9,19 +9,24 @@ import MessageInput from "./MessageInput";
 
 //const MessageInput = styled.div``;
 
-const ChatRoomWrapper = styled.div`
+const WidnowWrapper = styled.div`
 
+	height: 85%;
 
 `;
 
 const Window = () =>{
 
 	return(
-		<ChatRoomWrapper className="ChatRoomWindow">
-			<ChannelHeader/>
-			<MessageList/>
-			<MessageInput/>
-		</ChatRoomWrapper>
+		<>
+			<WidnowWrapper className="WindowWrapper">
+
+				<ChannelHeader/>
+				<MessageList/>
+				<MessageInput/>
+
+			</WidnowWrapper>
+		</>
 	);
 }
 

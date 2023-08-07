@@ -7,7 +7,14 @@ import Conversation from "./Conversation";
 
 const ThreadsContainer = styled.div`
 
-	width: 400px;
+	width: 40%;
+
+	min-width: 400px
+
+`;
+
+const ConversationWrapper = styled.div`
+
 
 `;
 
@@ -15,11 +22,13 @@ const ThreadsContainer = styled.div`
 const Threads = () =>{
 
 	return(
-		<ThreadsContainer>
+		<ThreadsContainer className="ThreadsContainer">
 			<ThreadsHeader/>
 			
-			<Conversation/>
-
+			<ConversationWrapper>
+				<Conversation/>
+			</ConversationWrapper>
+			
 		</ThreadsContainer>
 	);
 }

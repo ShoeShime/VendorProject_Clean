@@ -11,7 +11,7 @@ import Window from "./Window";
 
 const WindowContainer = styled.div`
 
-	width: 100%;
+
 
 `;
 
@@ -19,7 +19,7 @@ const Channel = () =>{
 
 
 	return(
-		<WindowContainer>
+		<WindowContainer className="WindowContainer">
 
 			<Window/>
 
