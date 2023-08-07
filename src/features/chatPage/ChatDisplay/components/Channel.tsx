@@ -9,18 +9,21 @@ import Window from "./Window";
 		//or should the Window component be renamed to ChatRoom(?)
 
 
-//const Window = styled.div``;
+const WindowContainer = styled.div`
 
+	width: 100%;
 
-
+`;
 
 const Channel = () =>{
 
 
 	return(
-		<>
+		<WindowContainer>
+
 			<Window/>
-		</>
+
+		</WindowContainer>
 	);
 }
 

@@ -63,6 +63,12 @@ const IsSeen = styled.div`
 	margin-right: 5px;
 `;
 
+//Later replace (map) as it should be taken from the database 
+	//Avatar Profile Picture
+	//AvatarName
+	//ConvoText
+	//IsSeen
+
 const Conversation = () =>{
 
 

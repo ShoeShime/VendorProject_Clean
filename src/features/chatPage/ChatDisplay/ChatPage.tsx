@@ -13,12 +13,20 @@ import Threads from "./components/Threads";
 
 //Background
 const Chat = styled.div`
-	position: fixed;
+	position: absolute;
 	background-color: #FFFFFF;
 
+	display: flex;
+	flex-direction: row;
 
 	height: 100%;
-	width: 100%;S
+	width: 100%;
+`;
+
+const Wrapper = styled.div`
+
+
+
 `;
 
 
@@ -34,15 +42,17 @@ const Chat = styled.div`
 const ChatPage = () =>{
 
 	return(
-		<>
-			<Chat>
+		<Wrapper>
+			<Chat className="ChatPage">
+				<Threads/>
+
 				<Channel/>
 
-				<Threads/>
 			</Chat>
 
 			<Navbar/>
-		</>
+
+		</Wrapper>
 	);
 }
 

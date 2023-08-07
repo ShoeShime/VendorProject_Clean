@@ -14,9 +14,6 @@ const ThreadsContainer = styled.div`
 
 const Threads = () =>{
 
-
-	
-
 	return(
 		<ThreadsContainer>
 			<ThreadsHeader/>

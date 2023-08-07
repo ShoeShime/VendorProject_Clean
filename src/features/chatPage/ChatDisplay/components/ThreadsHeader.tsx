@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 
+import SearchMessage from "./SearchMessage";
+
+
 const HeaderContainer = styled.div`
 	background-color: #f0f0f0;
 
@@ -43,10 +46,6 @@ const NewInbox = styled.div`
 
 `;
 
-const SearchMessage = styled.div`
-
-`;
-
 //May need to implement a search bar to search for a user
 
 const Threads = () =>{
@@ -63,7 +62,7 @@ const Threads = () =>{
 
 			</HeaderWrapper>
 
-			<SearchMessage>SearchBar</SearchMessage>
+			<SearchMessage/>
 		</HeaderContainer>
 	);
 }
