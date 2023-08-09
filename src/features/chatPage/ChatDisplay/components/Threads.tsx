@@ -7,7 +7,7 @@ import Conversation from "./Conversation";
 
 const ThreadsContainer = styled.div`
 
-	width: 40%;
+	width: 50%;
 
 	min-width: 400px
 
