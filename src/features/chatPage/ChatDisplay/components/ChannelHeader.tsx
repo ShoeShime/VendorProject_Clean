@@ -46,7 +46,7 @@ const ChannelHeader = () =>{
 
 
 	return(
-		<HeaderWrapper>
+		<HeaderWrapper className="ChannelHeader">
 			<Avatar>
 				
 			</Avatar>

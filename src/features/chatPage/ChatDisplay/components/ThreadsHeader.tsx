@@ -6,10 +6,12 @@ import SearchMessage from "./SearchMessage";
 
 
 const HeaderContainer = styled.div`
+
 	background-color: #f0f0f0;
 
 	display: flex;
 	flex-direction: column;
+
 
 	padding: 10px;
 	border-bottom: 1px solid #CCCCCC;

@@ -14,13 +14,13 @@ import Threads from "./components/Threads";
 const ChatPageWrapper = styled.div`
 
 
-
 `;
 
 //Background
 const Chat = styled.div`
 
 	display: flex;
+	flex-direction: row;
 
 `;
 
@@ -33,6 +33,7 @@ const Chat = styled.div`
 //Threads components
 	//this components shows users different chats rooms that are available
 
+//FIXME: ThreadHeader and ChannelHeader components are mislign but could be fixed later
 
 const ChatPage = () =>{
 
