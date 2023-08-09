@@ -12,7 +12,7 @@ import Threads from "./components/Threads";
 
 const ChatPageWrapper = styled.div`
 
-
+	
 `;
 
 const ChatContainer = styled.div`

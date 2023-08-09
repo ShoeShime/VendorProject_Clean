@@ -4,7 +4,7 @@ import { Link, matchPath, useLocation } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-const Navbar_Container = styled.div`
+const NavbarContainer = styled.div`
 
     margin: 0 0 0 0;
     width: 100%;
@@ -115,7 +115,7 @@ export default function Navbar() {
 
 
     return (
-        <Navbar_Container className="NavbarContainer">
+        <NavbarContainer className="NavbarContainer">
             <Navigation className="Navbar">
                 <Navigation_ul>
                     {menus.map((val, index) => {
@@ -135,6 +135,6 @@ export default function Navbar() {
                     })}
                 </Navigation_ul>
             </Navigation>
-        </Navbar_Container>
+        </NavbarContainer>
     )
 }
