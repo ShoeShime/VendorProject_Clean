@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+//MessageContainer
+	//This component is responsible for taking up the whole page(?)
+////////////////////////////////
+	//height: calc(100vh - 230px).. this should be moved to a higher parent heriarchy level if possible
+	//but navbar makes it impossible or difficult to do that.
+
 const MessageContainer = styled.div`
 	background-color: #EBF8F8;
 
