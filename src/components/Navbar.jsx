@@ -8,18 +8,20 @@ const Navbar_Container = styled.div`
 
     margin: 0 0 0 0;
     width: 100%;
-    
+
 `;
 
 const Navigation = styled.div`
     position: fixed;
-    width: 100%;
-    height: 55px;
-    bottom: 0;
     background: #d9d9d9;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    height: 55px;
+    width: 100%;
+    bottom: 0;
 `;
 
 const Navigation_ul = styled.ul`
@@ -113,8 +115,8 @@ export default function Navbar() {
 
 
     return (
-        <Navbar_Container className="Navbar">
-            <Navigation>
+        <Navbar_Container className="NavbarContainer">
+            <Navigation className="Navbar">
                 <Navigation_ul>
                     {menus.map((val, index) => {
                         return (

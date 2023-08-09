@@ -9,9 +9,9 @@ import MessageInput from "./MessageInput";
 
 //const MessageInput = styled.div``;
 
-const WidnowWrapper = styled.div`
+const WindowContainer = styled.div`
 
-	height: 85%;
+
 
 `;
 
@@ -19,13 +19,13 @@ const Window = () =>{
 
 	return(
 		<>
-			<WidnowWrapper className="WindowWrapper">
+			<WindowContainer className="WindowContainer">
 
 				<ChannelHeader/>
 				<MessageList/>
 				<MessageInput/>
 
-			</WidnowWrapper>
+			</WindowContainer>
 		</>
 	);
 }

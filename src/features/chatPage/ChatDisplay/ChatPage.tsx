@@ -11,21 +11,17 @@ import Threads from "./components/Threads";
 
 
 
-const Wrapper = styled.div`
-	position: absolute;
+const ChatPageWrapper = styled.div`
+
 
 
 `;
 
 //Background
 const Chat = styled.div`
-	background-color: #FFFFFF;
 
 	display: flex;
-	flex-direction: row;
 
-	height: 100%;
-	width: 100%;
 `;
 
 
@@ -41,7 +37,7 @@ const Chat = styled.div`
 const ChatPage = () =>{
 
 	return(
-		<Wrapper className="Wrapper of the Whole Page">
+		<ChatPageWrapper className="ChatPageWrapper">
 			<Chat className="ChatPage">
 				<Threads/>
 
@@ -51,7 +47,7 @@ const ChatPage = () =>{
 
 			<Navbar/>
 
-		</Wrapper>
+		</ChatPageWrapper>
 	);
 }
 

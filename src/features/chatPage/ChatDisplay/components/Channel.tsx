@@ -9,8 +9,7 @@ import Window from "./Window";
 		//or should the Window component be renamed to ChatRoom(?)
 
 
-const WindowContainer = styled.div`
-
+const ChannelContainer = styled.div`
 
 
 `;
@@ -19,11 +18,11 @@ const Channel = () =>{
 
 
 	return(
-		<WindowContainer className="WindowContainer">
+		<ChannelContainer className="ChannelContainer">
 
 			<Window/>
 
-		</WindowContainer>
+		</ChannelContainer>
 	);
 }
 
