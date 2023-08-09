@@ -52,8 +52,8 @@ const Threads = () =>{
 
 
 	return(
-		<HeaderContainer>
-			<HeaderWrapper>
+		<HeaderContainer className="ThreadsHeader">
+			<HeaderWrapper className="UserInfo ThreadsHeader">
 
 				<HeaderProfile/>
 				<HeaderText>Messages</HeaderText>

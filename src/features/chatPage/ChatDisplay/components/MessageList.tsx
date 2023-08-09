@@ -8,6 +8,7 @@ const MessageContainer = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-end;
+	height: calc(100vh - 230px);
 
 	padding: 10px;
 
@@ -83,14 +84,15 @@ const RecievedMessageText = styled.span`
 	margin-inline-end: 9px;
 `;
 
+////////////////////////////////
 
 const MessageList = () =>{
 
 
 	return(
 		<>
-			<MessageContainer className="Messaged Displayed">
-				<ReceivedWrapper className="RecievedWrapper">
+			<MessageContainer className="MessagedDisplayed">
+				<ReceivedWrapper className="RecievedMessageWrapper">
 					<RecievedAvatar>
 
 					</RecievedAvatar>
@@ -103,7 +105,7 @@ const MessageList = () =>{
 					</RecievedMessageWrapper>
 				</ReceivedWrapper>
 
-				<SentMessageWrapper>
+				<SentMessageWrapper className="SentMessageWrapper">
 					<SentMessageText>
 						Test 2: This is a bunch of line of text, would this work hopefully. 
 						I need to add more text horray okay a bit more, this looks kinda nice
