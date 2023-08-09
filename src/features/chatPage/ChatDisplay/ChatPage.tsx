@@ -10,17 +10,14 @@ import Channel from "./components/Channel";
 import Threads from "./components/Threads";
 
 
-
 const ChatPageWrapper = styled.div`
 
 
 `;
 
-//Background
-const Chat = styled.div`
+const ChatContainer = styled.div`
 
 	display: flex;
-	flex-direction: row;
 
 `;
 
@@ -29,26 +26,27 @@ const Chat = styled.div`
 	//This component renders a single chatroom for the user 
 	//to view if they have selected a channel
 
-
 //Threads components
 	//this components shows users different chats rooms that are available
 
 //FIXME: ThreadHeader and ChannelHeader components are mislign but could be fixed later
 
 const ChatPage = () =>{
+	console.log("Loading Chat Page");
+
 
 	return(
-		<ChatPageWrapper className="ChatPageWrapper">
-			<Chat className="ChatPage">
-				<Threads/>
+			<ChatPageWrapper className="ChatPageWrapper">
+				<ChatContainer className="ChatPage">
+					<Threads/>
 
-				<Channel/>
+					<Channel/>
 
-			</Chat>
+				</ChatContainer>
 
-			<Navbar/>
+				<Navbar/>
 
-		</ChatPageWrapper>
+			</ChatPageWrapper>
 	);
 }
 

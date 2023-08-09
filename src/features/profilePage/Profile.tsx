@@ -9,7 +9,7 @@ import samplePDF from "../../Marys-FoodTruck-Menu.pdf";
 //global components ??
 import Navbar from "../../components/Navbar";
 
-//What is this imports purposes of?
+//What is the purpose of this this import/element
 import Modal from "../../components/Modal";
 
 
