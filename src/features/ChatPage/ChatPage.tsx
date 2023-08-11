@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 //Global components
-import Navbar from "../../../components/Navbar";
+import Navbar from "../../components/Navbar";
 
 //ChatPage components
 import Channel from "./components/Channel";
