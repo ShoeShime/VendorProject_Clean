@@ -13,7 +13,7 @@ const ThreadsContainer = styled.div`
 
 `;
 
-const ConversationWrapper = styled.div`
+const ConversationContainer = styled.div`
 
 
 `;
@@ -25,9 +25,9 @@ const Threads = () =>{
 		<ThreadsContainer className="ThreadsContainer">
 			<ThreadsHeader/>
 			
-			<ConversationWrapper>
+			<ConversationContainer>
 				<Conversation/>
-			</ConversationWrapper>
+			</ConversationContainer>
 			
 		</ThreadsContainer>
 	);

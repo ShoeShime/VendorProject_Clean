@@ -12,7 +12,7 @@ import Threads from "./components/Threads";
 
 const ChatPageWrapper = styled.div`
 
-	
+
 `;
 
 const ChatContainer = styled.div`
@@ -34,6 +34,8 @@ const ChatContainer = styled.div`
 const ChatPage = () =>{
 	console.log("Loading Chat Page");
 
+
+	
 
 	return(
 			<ChatPageWrapper className="ChatPageWrapper">
