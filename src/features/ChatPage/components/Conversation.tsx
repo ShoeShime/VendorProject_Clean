@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const ConversationWrapper = styled.div`
+const ConversationContainer = styled.div`
 
 	display: flex;
 	align-items: center;
@@ -73,9 +73,11 @@ const Conversation = () =>{
 
 
 	return(
-		<ConversationWrapper>
+		<ConversationContainer>
 			<Avatar/>
+
 			<MessageInfo>
+				
 				<MessageContext>
 					<AvatarName>Name Here </AvatarName>
 					<ConvoText>This is a message that I am sending</ConvoText>
@@ -83,7 +85,7 @@ const Conversation = () =>{
 
 				<IsSeen/>
 			</MessageInfo>
-		</ConversationWrapper>
+		</ConversationContainer>
 	);
 }
 

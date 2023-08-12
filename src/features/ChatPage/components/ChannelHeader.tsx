@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderWrapper = styled.div`
+const HeaderContainer = styled.div`
 	background-color: #f5f5f5;
 
 	display: flex;
@@ -46,7 +46,7 @@ const ChannelHeader = () =>{
 
 
 	return(
-		<HeaderWrapper className="ChannelHeader">
+		<HeaderContainer className="ChannelHeader">
 			<Avatar>
 				
 			</Avatar>
@@ -62,7 +62,7 @@ const ChannelHeader = () =>{
 			</TextWrapper>
 
 
-		</HeaderWrapper>
+		</HeaderContainer>
 	);
 }
 

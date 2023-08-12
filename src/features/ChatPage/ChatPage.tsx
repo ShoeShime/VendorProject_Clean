@@ -10,12 +10,12 @@ import Channel from "./components/Channel";
 import Threads from "./components/Threads";
 
 
-const ChatPageWrapper = styled.div`
+const ChatPageContainer = styled.div`
 
 
 `;
 
-const ChatContainer = styled.div`
+const ChatWrapper = styled.div`
 
 	display: flex;
 
@@ -38,17 +38,17 @@ const ChatPage = () =>{
 	
 
 	return(
-			<ChatPageWrapper className="ChatPageWrapper">
-				<ChatContainer className="ChatPage">
+			<ChatPageContainer className="ChatPageWrapper">
+				<ChatWrapper className="ChatPage">
 					<Threads/>
 
 					<Channel/>
 
-				</ChatContainer>
+				</ChatWrapper>
 
 				<Navbar/>
 
-			</ChatPageWrapper>
+			</ChatPageContainer>
 	);
 }
 
