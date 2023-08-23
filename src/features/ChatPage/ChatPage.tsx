@@ -35,8 +35,6 @@ const ChatPage = () =>{
 	console.log("Loading Chat Page");
 
 
-	
-
 	return(
 			<ChatPageContainer className="ChatPageWrapper">
 				<ChatWrapper className="ChatPage">

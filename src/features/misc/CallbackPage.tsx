@@ -46,13 +46,9 @@ export const CallbackPage = () => {
   }, [isAuthenticated, routerNavigate, user.sub]);
 
   if (isLoading) {
-    return (
-      <Link
-        to={"/customer"}
-      >
-        <p>Go To customer Dashboard</p>
-      </Link>
-    );
+    return 
+      <LoadingSpinner />;
+    
 
     //return <LoadingSpinner />;
   }

@@ -173,11 +173,17 @@ export const Register = () => {
           {userType === null && <RegisterWrapper>
             <h1>Registration</h1>
             <Button onClick={setCustomerUserType}>Customer</Button>
-          <Button onClick={setVendorUserType}>Vendor</Button>
+            <Button onClick={setVendorUserType}>Vendor</Button>
           {userType}
           </RegisterWrapper>}
           {userType === 'customer' && <CustomerRegister userSub={params.userSub}></CustomerRegister>}
           {userType === 'vendor' && <VendorRegister userSub={params.userSub}></VendorRegister>}
+          {/*}
+          <RegisterWrapper>
+            <h1>Registration</h1>
+            <Button onClick={handleRegisterCustomerClick}>Customer</Button>
+            <Button onClick={handleRegisterVendorClick}>Vendor</Button>
+          </RegisterWrapper>*/}
         </Background>
       );
     };
