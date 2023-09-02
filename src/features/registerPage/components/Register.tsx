@@ -87,103 +87,82 @@ const SuccessMessage = styled.p`
   margin-top: 1rem;
 `;
 
-
 export const Register = () => {
-    const routerNavigate = useNavigate();
-    const params = useParams();
-    const [businessName, setBusinessName] = useState('');
-    const [category, setCategory] = useState('');
-    const [description, setDescription] = useState('');
+  const routerNavigate = useNavigate();
+  const [businessName, setBusinessName] = useState('');
+  const [category, setCategory] = useState('');
+  const [description, setDescription] = useState('');
 
 
-    const handleBusinessNameChange = (e) => {
-        setBusinessName(e.target.value);
-        if (e.target.value) {
-            setBusinessNameFilled(true);
-        } else {
-            setBusinessNameFilled(false);
-        }
-    };
+  const handleBusinessNameChange = (e) => {
+    setBusinessName(e.target.value);
+    if (e.target.value) {
+      setBusinessNameFilled(true);
+    } else {
+      setBusinessNameFilled(false);
+    }
+  };
 
-    const handleCategoryChange = (e) => {
-        setCategory(e.target.value);
-        if (e.target.value) {
-            setCategoryFilled(true);
-        } else {
-            setCategoryFilled(false);
-        }
-    };
-
-
-    const handleDescriptionChange = (e) => {
-        setDescription(e.target.value);
-        if (e.target.value) {
-            setDescriptionFilled(true);
-        } else {
-            setDescriptionFilled(false);
-        }
-    };
-
-    const handleBusinessNameNextClick = (e) => {
-        e.preventDefault();
-        console.log('Something');
-        setBusinessNameFilled(false);
-        setCategoryFilled(true);
-    };
-
-    const handleRegisterClick = (e) => {
-        e.preventDefault();
-        console.log('Something');
-        setShowSuccessMessage(true);
-    };
-
-    /*add a click for register Handler*/
-    const handleRegisterVendorClick = (e) => {
-      e.preventDefault();
-      console.log('Something');
-      setShowSuccessMessage(true);
-      routerNavigate('/register/vendor');
-    };
-
-     /*add a click for customer Handler*/
-     const handleRegisterCustomerClick = (e) => {
-      e.preventDefault();
-      console.log('Something');
-      setShowSuccessMessage(true);
-      routerNavigate('/register/customer');
-    };
-
-    const [businessNameFilled, setBusinessNameFilled] = useState(false);
-    const [categoryFilled, setCategoryFilled] = useState(false);
-    const [descriptionFilled, setDescriptionFilled] = useState(false);
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-    const [userType, setUserType] = useState(null); /*creating variable for the Syntax Component */
-
-    const setCustomerUserType = (e) => {
-      setUserType('customer')
-    };
-
-    const setVendorUserType = (e) => {
-      setUserType('vendor')
-    };
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+    if (e.target.value) {
+      setCategoryFilled(true);
+    } else {
+      setCategoryFilled(false);
+    }
+  };
 
 
-    return (
-        <Background>
-          {userType === null && <RegisterWrapper>
-            <h1>Registration</h1>
-            <Button onClick={setCustomerUserType}>Customer</Button>
-            <Button onClick={setVendorUserType}>Vendor</Button>
-          {userType}
-          </RegisterWrapper>}
-          {userType === 'customer' && <CustomerRegister userSub={params.userSub}></CustomerRegister>}
-          {userType === 'vendor' && <VendorRegister userSub={params.userSub}></VendorRegister>}
-          {/*}
-          <RegisterWrapper>
-            <h1>Registration</h1>
-            <Button onClick={handleRegisterCustomerClick}>Customer</Button>
-            <Button onClick={handleRegisterVendorClick}>Vendor</Button>
-          </RegisterWrapper>*/}
-        </Background>
-      );
-    };
+  const handleDescriptionChange = (e) => {
+    setDescription(e.target.value);
+    if (e.target.value) {
+      setDescriptionFilled(true);
+    } else {
+      setDescriptionFilled(false);
+    }
+  };
+
+  const handleBusinessNameNextClick = (e) => {
+    e.preventDefault();
+    console.log('Something');
+    setBusinessNameFilled(false);
+    setCategoryFilled(true);
+  };
+
+  const handleRegisterClick = (e) => {
+    e.preventDefault();
+    console.log('Something');
+    setShowSuccessMessage(true);
+  };
+
+  /*add a click for register Handler*/
+  const handleRegisterVendorClick = (e) => {
+    e.preventDefault();
+    console.log('Something');
+    setShowSuccessMessage(true);
+    routerNavigate('/register/vendor');
+  };
+
+  /*add a click for customer Handler*/
+  const handleRegisterCustomerClick = (e) => {
+    e.preventDefault();
+    console.log('Something');
+    setShowSuccessMessage(true);
+    routerNavigate('/register/customer');
+  };
+
+  const [businessNameFilled, setBusinessNameFilled] = useState(false);
+  const [categoryFilled, setCategoryFilled] = useState(false);
+  const [descriptionFilled, setDescriptionFilled] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  return (
+    <Background>
+      <RegisterWrapper>
+        <h1>Registration</h1>
+        <Button onClick={handleRegisterCustomerClick}>Customer</Button>
+        <Button onClick={handleRegisterVendorClick}>Vendor</Button>
+      </RegisterWrapper>
+    </Background>
+  );
+};

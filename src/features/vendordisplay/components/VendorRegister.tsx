@@ -85,7 +85,7 @@ const SuccessMessage = styled.p`
   margin-top: 1rem;
 `;
 
-const VendorRegistration = ({ userSub }) => {
+const VendorRegistration = () => {
   const [businessName, setBusinessName] = useState('');
   const [category, setCategory] = useState('');
   const [description, setDescription] = useState('');
@@ -94,15 +94,9 @@ const VendorRegistration = ({ userSub }) => {
   const [categoryFilled, setCategoryFilled] = useState(false);
   const [descriptionFilled, setDescriptionFilled] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const routerNavigate = useNavigate();
 
-
-  /*call to db.json*/
-  const submit = async () => {
-    await axios.put(`http://localhost:3000/users/${userSub}`, { "profileType": "Vendor", businessName, description, category}) /*profileType -> customer name*/
-    routerNavigate('/vendor/');
-  };
   const navigate = useNavigate();
+
 
   const handleBusinessNameChange = (e) => {
     setBusinessName(e.target.value);
@@ -148,11 +142,10 @@ const VendorRegistration = ({ userSub }) => {
     e.preventDefault();
     console.log('Something');
     setShowSuccessMessage(true);
-    submit();
   };
 
   const handleCustomerClick = () => {
-    navigate('/vendorRegistration');  //need this to navigate to customer page
+    navigate('/customerRegistration');  //need this to navigate to customer page
   };
 
 

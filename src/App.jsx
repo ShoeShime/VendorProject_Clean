@@ -16,7 +16,7 @@ import CustomerRegister from './features/vendordisplay/components/CustomerRegist
 import UseVendorData from "./features/vendordisplay/components/UseVendorData";
 
 
-export const App = () => {
+export const App = ()=>{
   
   console.log('app page loaded');
 
@@ -27,6 +27,12 @@ export const App = () => {
       <Route path='/index.html' element={<LandingPage/>} />
       <Route path='/callback' element={<ProtectedRoute component={CallbackPage} /> } />
       <Route path='/customer' element={<ProtectedRoute component={CustomerDashboard} /> } />
+      <Route path='/vendor' element={<ProtectedRoute component={VendorDashboard} /> } />
+      <Route path='/register' element={<ProtectedRoute component={Register}/>}/>
+      {/*connect new route */}
+      <Route path='/register/vendor' element={<ProtectedRoute component={VendorRegister}/>}/>
+      <Route path='/register/customer' element={<ProtectedRoute component={CustomerRegister}/>}/>
+      
       <Route path='/chat' element={<ChatPage/>}/>
       <Route path='/map' element={<MapPage/>}/>
 
@@ -38,8 +44,7 @@ export const App = () => {
       
       <Route path='/register' element={<ProtectedRoute component={Register}/>}/>
       {/*connect new route */}
-      <Route path='/register/vendor' element={<ProtectedRoute component={VendorRegister}/>}/>
-      <Route path='/register/customer' element={<ProtectedRoute component={CustomerRegister}/>}/>
+
       <Route path='/register/:userSub' element={<ProtectedRoute component={Register}/>}/>
 
     </Routes>
